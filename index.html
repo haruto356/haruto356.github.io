@@ -15,29 +15,29 @@
     <body>
         <h1>ワット計算ツール</h1>
         <!--入力欄-->
-        <input id="w" type="text">
+        <input id="w" type="tell">
         <span>W</span>
-        <input id="m" type="text">
+        <input id="m" type="number">
         <span>分</span>
-        <input id="s" type="text">
+        <input id="s" type="number">
         <span>秒</span>
         <input id="k" type="button" value="計算">
 
         <div class="main">
             <!--横一列に揃える-->
             <div>600Wで</div>
-            <div id="kekka"></div>
+            <div id="result"></div>
             <div>分</div>
-            <div id="kekkas"></div>
+            <div id="results"></div>
             <div>秒</div>
         </div>
         
         <div class="main2">
             <!--横一列に揃える-->
             <div>1000Wで</div>
-            <div id="kekka2"></div>
+            <div id="result2"></div>
             <div>分</div>
-            <div id="kekka2s"></div>
+            <div id="result2s"></div>
             <div>秒</div>
         </div>
 
@@ -61,8 +61,8 @@
                 var result4 = document.getElementById("k").textContent = result2 % 60;
 
                 //結果を表示
-                document.getElementById("kekka").innerHTML = result3;
-                document.getElementById("kekkas").innerHTML = result4;
+                document.getElementById("result").innerHTML = result3;
+                document.getElementById("results").innerHTML = result4;
 
                 //ジュール計算
                 var result = document.getElementById("k").textContent = w * ( m * 60 + s);
@@ -76,8 +76,8 @@
                 var result4 = document.getElementById("k").textContent = result2 % 60;
 
                 //結果を表示
-                document.getElementById("kekka2").innerHTML = result3;
-                document.getElementById("kekka2s").innerHTML = result4;
+                document.getElementById("result2").innerHTML = result3;
+                document.getElementById("result2s").innerHTML = result4;
             };
         </script>
         
